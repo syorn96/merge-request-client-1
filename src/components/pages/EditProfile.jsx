@@ -191,11 +191,7 @@ export default function EditProfile(props) {
                 <label className="block uppercase text-m font-code text-db mb-2" htmlFor="state">
                     State
                 </label>
-<<<<<<< HEAD
-                <input lists='state' type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" value={form.state} id="states" onChange={handleStateChange} pattern={autocompleteStates.join("|")} autoComplete="on" required/>
-=======
                 <input list='states' type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" value={form.state} id="state" onChange={handleStateChange} pattern={autocompleteStates.join("|")} autoComplete="on" required/>
->>>>>>> 68f433cdd2049bd7c7a8a23f32de65264067701d
 				<datalist id="states">
 				{autocompleteStates.map((state, i) => (
 				<option key={i}>{state}</option>
